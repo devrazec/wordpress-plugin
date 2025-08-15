@@ -32,3 +32,16 @@ Check database:
 User: admim
 Password: password
 http://localhost:8080/wp-admin
+
+# Install PHP Unit Test
+
+cd /wp-content/plugins/devrazec
+composer install
+
+
+vendor/bin/phpunit tests/test-sample.php
+
+php vendor/bin/phpunit --version
+php vendor/bin/phpunit 
+
+php vendor/bin/phpunit /plugin/devrazec/tests/test-sample.php
