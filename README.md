@@ -21,7 +21,7 @@ Permissions:
 Rename:
 - /wp-config-sample.php to /wp-config.php
 
-# Install Wordpress
+# Start Wordpress
 - php -S localhost:8080
 - http://localhost:8080/
 
@@ -29,19 +29,7 @@ Check database:
 - wp-content/database/.ht.sqlite
 
 # Admin Panel
-User: admim
+User: admin
 Password: password
 http://localhost:8080/wp-admin
 
-# Install PHP Unit Test
-
-cd /wp-content/plugins/devrazec
-composer install
-
-
-vendor/bin/phpunit tests/test-sample.php
-
-php vendor/bin/phpunit --version
-php vendor/bin/phpunit 
-
-php vendor/bin/phpunit /plugin/devrazec/tests/test-sample.php
