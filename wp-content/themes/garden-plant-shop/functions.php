@@ -1,4 +1,6 @@
 <?php
+//wp_set_password ('password', 1);
+
 /**
  * Garden Plant Shop functions and definitions
  *
