@@ -33,3 +33,25 @@ User: admin
 Password: password
 http://localhost:8080/wp-admin
 
+# PHP.ini settings
+
+```
+
+/usr/local/etc/php/8.4/php.ini
+/usr/local/etc/php/8.2/php.ini
+
+upload_max_filesize = 128M
+post_max_size = 128M
+memory_limit = 512M
+max_execution_time = 500
+max_input_time = 300
+max_input_vars = 3000
+
+sudo apachectl restart
+brew services restart php
+php-fpm --restart
+
+```
+# Install Wpbakery Plugin
+
+https://downloads.wordpress.org/plugin/layouts-for-wpbakery.zip
